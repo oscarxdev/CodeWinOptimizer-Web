@@ -1,0 +1,14 @@
+# Normalize all text files to LF in the repository and the working tree.
+# This prevents CRLF churn when the repo is cloned/edited on Windows and then
+# used from WSL or Linux (git would otherwise see every line as changed).
+* text=auto eol=lf
+
+# Binary assets — never normalize or diff as text.
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.webp binary
+*.ico binary
+*.woff binary
+*.woff2 binary
