@@ -33,6 +33,8 @@ export default function Navbar() {
 
   const navItems = [
     { label: t.nav.docs, href: "/docs" },
+    { label: t.nav.guides, href: "/blog" },
+    { label: t.nav.about, href: "/about" },
   ];
 
   return (

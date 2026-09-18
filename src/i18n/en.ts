@@ -4,6 +4,8 @@ const en = {
     preview: "Preview",
     techStack: "Tech Stack",
     docs: "Docs",
+    guides: "Guides",
+    about: "About",
     starOnGitHub: "Star on GitHub",
     download: "Download",
   },
@@ -163,6 +165,22 @@ const en = {
   },
   footer: {
     website: "OscarDev",
+    tagline:
+      "Free, open-source Windows optimizer. Local-first, portable, and telemetry-free.",
+    product: "Product",
+    resources: "Resources",
+    legal: "Legal",
+    docs: "Documentation",
+    guides: "Guides & Tutorials",
+    about: "About the project",
+    github: "GitHub",
+    releases: "Releases",
+    privacy: "Privacy Policy",
+    terms: "Terms of Use",
+    contact: "Contact",
+    license: "MIT License",
+    disclaimer:
+      "CodeWinOptimizer is an independent open-source project and is not affiliated with, endorsed by, or sponsored by Microsoft Corporation. Windows is a trademark of Microsoft Corporation.",
   },
   lang: "English",
 };

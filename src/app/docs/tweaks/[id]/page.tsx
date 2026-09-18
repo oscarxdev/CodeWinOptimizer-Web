@@ -81,6 +81,12 @@ export default async function TweakDetailPage({
   const found = findTweak(id);
   if (!found) notFound();
 
+  const related = (tweaksData as TweakCategory[])
+    .find((c) => c.id === found.category.id)
+    ?.tweaks.filter((t) => t.id !== found.tweak.id)
+    .slice(0, 4)
+    .map((t) => ({ id: t.id, name: t.name })) ?? [];
+
   const breadcrumb = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -118,7 +124,11 @@ export default async function TweakDetailPage({
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }}
       />
-      <TweakDetailClient tweak={found.tweak} category={found.category} />
+      <TweakDetailClient
+        tweak={found.tweak}
+        category={found.category}
+        related={related}
+      />
     </>
   );
 }

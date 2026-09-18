@@ -4,6 +4,8 @@ const es = {
     preview: "Vista previa",
     techStack: "Tecnología",
     docs: "Docs",
+    guides: "Guías",
+    about: "Acerca de",
     starOnGitHub: "Estrella en GitHub",
     download: "Descargar",
   },
@@ -164,6 +166,22 @@ const es = {
   },
   footer: {
     website: "OscarDev",
+    tagline:
+      "Optimizador de Windows gratuito y de código abierto. Local, portátil y sin telemetría.",
+    product: "Producto",
+    resources: "Recursos",
+    legal: "Legal",
+    docs: "Documentación",
+    guides: "Guías y Tutoriales",
+    about: "Sobre el proyecto",
+    github: "GitHub",
+    releases: "Descargas",
+    privacy: "Política de Privacidad",
+    terms: "Términos de Uso",
+    contact: "Contacto",
+    license: "Licencia MIT",
+    disclaimer:
+      "CodeWinOptimizer es un proyecto independiente de código abierto y no está afiliado, respaldado ni patrocinado por Microsoft Corporation. Windows es una marca registrada de Microsoft Corporation.",
   },
   lang: "Español",
 };
