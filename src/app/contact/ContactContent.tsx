@@ -155,7 +155,9 @@ export default function ContactContent() {
         ))}
       </div>
 
-      <h2 className="mt-10 text-lg font-semibold text-white">{c.beforeTitle}</h2>
+      <h2 className="mt-10 text-lg font-semibold text-white">
+        {c.beforeTitle}
+      </h2>
       <ul>
         {c.before.map((item, i) => (
           <li key={i}>{item}</li>

@@ -108,7 +108,10 @@ const content: Record<
         href: "https://github.com/oscarxdev/CodeWinOptimizer-App/blob/main/LICENSE",
         external: true,
       },
-      { type: "h2", text: "3. Los cambios en el sistema son tu responsabilidad" },
+      {
+        type: "h2",
+        text: "3. Los cambios en el sistema son tu responsabilidad",
+      },
       {
         type: "warn",
         text: "La aplicación y las guías de este sitio pueden modificar ajustes de Windows, servicios, tareas programadas y el registro. Crea siempre un punto de restauración antes de aplicar tweaks y lee las advertencias de cada uno.",

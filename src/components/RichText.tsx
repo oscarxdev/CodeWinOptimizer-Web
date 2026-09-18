@@ -39,7 +39,9 @@ function LinkLine({ block }: { block: Extract<RichBlock, { type: "link" }> }) {
 function CtaBox({ block }: { block: Extract<RichBlock, { type: "cta" }> }) {
   const inner = (
     <>
-      <span className="block text-sm font-semibold text-white">{block.title}</span>
+      <span className="block text-sm font-semibold text-white">
+        {block.title}
+      </span>
       <span className="mt-1 block text-sm text-text-muted leading-relaxed">
         {block.text}
       </span>
@@ -52,7 +54,12 @@ function CtaBox({ block }: { block: Extract<RichBlock, { type: "cta" }> }) {
   return (
     <div className="my-8 rounded-xl border border-neon/20 bg-neon/5 p-5">
       {block.external ? (
-        <a href={block.href} target="_blank" rel="noopener noreferrer" className="block">
+        <a
+          href={block.href}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="block"
+        >
           {inner}
         </a>
       ) : (
@@ -64,7 +71,11 @@ function CtaBox({ block }: { block: Extract<RichBlock, { type: "cta" }> }) {
   );
 }
 
-export default function RichText({ blocks }: { blocks: RichBlock[] }): ReactNode {
+export default function RichText({
+  blocks,
+}: {
+  blocks: RichBlock[];
+}): ReactNode {
   return (
     <>
       {blocks.map((block, i) => {

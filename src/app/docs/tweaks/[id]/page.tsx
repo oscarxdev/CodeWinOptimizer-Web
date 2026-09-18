@@ -21,7 +21,9 @@ type TweakCategory = {
   tweaks: TweakEntry[];
 };
 
-function findTweak(id: string): { tweak: TweakEntry; category: TweakCategory } | null {
+function findTweak(
+  id: string,
+): { tweak: TweakEntry; category: TweakCategory } | null {
   const cats = tweaksData as TweakCategory[];
   for (const cat of cats) {
     const t = cat.tweaks.find((t) => t.id === id);
@@ -67,7 +69,9 @@ export async function generateMetadata({
       description: tweak.description.en,
       type: "article",
       url: absoluteUrl(`/docs/tweaks/${tweak.id}`),
-      images: [{ url: absoluteUrl("/opengraph-image"), width: 1200, height: 630 }],
+      images: [
+        { url: absoluteUrl("/opengraph-image"), width: 1200, height: 630 },
+      ],
     },
   };
 }
@@ -81,11 +85,12 @@ export default async function TweakDetailPage({
   const found = findTweak(id);
   if (!found) notFound();
 
-  const related = (tweaksData as TweakCategory[])
-    .find((c) => c.id === found.category.id)
-    ?.tweaks.filter((t) => t.id !== found.tweak.id)
-    .slice(0, 4)
-    .map((t) => ({ id: t.id, name: t.name })) ?? [];
+  const related =
+    (tweaksData as TweakCategory[])
+      .find((c) => c.id === found.category.id)
+      ?.tweaks.filter((t) => t.id !== found.tweak.id)
+      .slice(0, 4)
+      .map((t) => ({ id: t.id, name: t.name })) ?? [];
 
   const breadcrumb = {
     "@context": "https://schema.org",

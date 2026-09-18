@@ -30,7 +30,10 @@ export const disableTelemetry: BlogPost = {
           "Tailored experiences — personalized tips and suggestions built from your diagnostic data.",
         ],
       },
-      { type: "h2", text: "Step 1 — Turn off optional diagnostic data in Settings" },
+      {
+        type: "h2",
+        text: "Step 1 — Turn off optional diagnostic data in Settings",
+      },
       {
         type: "p",
         text: "Open Settings (Win + I) and go to Privacy & security → Diagnostics & feedback. This page controls most of what you need:",
@@ -48,7 +51,10 @@ export const disableTelemetry: BlogPost = {
         type: "p",
         text: "While you are in Settings, also open Privacy & security → General: turn off the advertising ID and the other suggestion options if you do not use them.",
       },
-      { type: "h2", text: "Step 2 — Lower the telemetry level (Pro, Enterprise and Education)" },
+      {
+        type: "h2",
+        text: "Step 2 — Lower the telemetry level (Pro, Enterprise and Education)",
+      },
       {
         type: "p",
         text: "Windows enforces a floor: Home and Pro always send at least Required diagnostic data, and the “off” (Security, 0) level is only honored on Enterprise and Education editions. So on a normal PC the goal is to make sure nothing above Required is sent. On Pro and above you can do this two ways:",
@@ -64,7 +70,10 @@ export const disableTelemetry: BlogPost = {
         type: "tip",
         text: "Create a system restore point before editing the registry. If you use CodeWinOptimizer, the privacy tweaks create the restore point for you and log the exact values they change.",
       },
-      { type: "h2", text: "Step 3 — The services and scheduled tasks behind telemetry" },
+      {
+        type: "h2",
+        text: "Step 3 — The services and scheduled tasks behind telemetry",
+      },
       {
         type: "p",
         text: "Two Windows services do most of the telemetry work. You can set both to Disabled:",
@@ -94,7 +103,10 @@ export const disableTelemetry: BlogPost = {
           "Personalized suggestions across Windows become generic — that is the trade-off working as intended.",
         ],
       },
-      { type: "h2", text: "Verify your changes — and re-check after feature updates" },
+      {
+        type: "h2",
+        text: "Verify your changes — and re-check after feature updates",
+      },
       {
         type: "ul",
         items: [
@@ -146,7 +158,10 @@ export const disableTelemetry: BlogPost = {
           "Experiencias personalizadas — consejos y sugerencias hechas a partir de tus datos de diagnóstico.",
         ],
       },
-      { type: "h2", text: "Paso 1 — Desactiva los datos opcionales en Configuración" },
+      {
+        type: "h2",
+        text: "Paso 1 — Desactiva los datos opcionales en Configuración",
+      },
       {
         type: "p",
         text: "Abre Configuración (Win + I) y ve a Privacidad y seguridad → Diagnóstico y comentarios. Esta página controla casi todo lo que necesitas:",
@@ -164,7 +179,10 @@ export const disableTelemetry: BlogPost = {
         type: "p",
         text: "Ya que estás en Configuración, abre también Privacidad y seguridad → General: desactiva el ID de publicidad y las demás opciones de sugerencias si no las usas.",
       },
-      { type: "h2", text: "Paso 2 — Baja el nivel de telemetría (Pro, Enterprise y Education)" },
+      {
+        type: "h2",
+        text: "Paso 2 — Baja el nivel de telemetría (Pro, Enterprise y Education)",
+      },
       {
         type: "p",
         text: "Windows impone un mínimo: Home y Pro siempre envían datos de diagnóstico requeridos, y el nivel “desactivado” (Seguridad, 0) solo se respeta en ediciones Enterprise y Education. Así que en un PC normal el objetivo es asegurarse de que no se envíe nada por encima de Requerido. En Pro o superior puedes hacerlo de dos formas:",
@@ -180,7 +198,10 @@ export const disableTelemetry: BlogPost = {
         type: "tip",
         text: "Crea un punto de restauración antes de editar el registro. Si usas CodeWinOptimizer, sus tweaks de privacidad crean el punto de restauración por ti y registran los valores exactos que cambian.",
       },
-      { type: "h2", text: "Paso 3 — Los servicios y tareas programadas detrás de la telemetría" },
+      {
+        type: "h2",
+        text: "Paso 3 — Los servicios y tareas programadas detrás de la telemetría",
+      },
       {
         type: "p",
         text: "Dos servicios de Windows hacen la mayor parte del trabajo de telemetría. Puedes poner ambos en Deshabilitado:",
@@ -210,7 +231,10 @@ export const disableTelemetry: BlogPost = {
           "Las sugerencias personalizadas de Windows pasan a ser genéricas — ese es el intercambio funcionando como se espera.",
         ],
       },
-      { type: "h2", text: "Verifica tus cambios — y vuelve a comprobarlos tras las actualizaciones" },
+      {
+        type: "h2",
+        text: "Verifica tus cambios — y vuelve a comprobarlos tras las actualizaciones",
+      },
       {
         type: "ul",
         items: [

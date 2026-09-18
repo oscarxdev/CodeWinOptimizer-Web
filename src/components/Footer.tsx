@@ -101,7 +101,9 @@ export default function Footer() {
         </div>
 
         <div className="mt-10 border-t border-border pt-6">
-          <p className="text-xs text-text-muted leading-relaxed">{f.disclaimer}</p>
+          <p className="text-xs text-text-muted leading-relaxed">
+            {f.disclaimer}
+          </p>
           <p className="mt-4 text-xs text-text-muted">
             &copy; {new Date().getFullYear()} {f.website} · CodeWinOptimizer
           </p>

@@ -36,7 +36,10 @@ export default function PostContent({ post }: { post: BlogPost }) {
   return (
     <>
       <div className="mb-6">
-        <Link href="/blog" className="text-xs text-text-muted hover:text-neon transition-colors">
+        <Link
+          href="/blog"
+          className="text-xs text-text-muted hover:text-neon transition-colors"
+        >
           &larr; <span className="hover:underline">{l.back}</span>
         </Link>
       </div>
@@ -67,7 +70,9 @@ export default function PostContent({ post }: { post: BlogPost }) {
 
       <div className="mt-12 rounded-xl border border-border bg-bg-card p-6">
         <h2 className="text-base font-semibold text-white">{l.ctaTitle}</h2>
-        <p className="mt-2 text-sm leading-relaxed text-text-muted">{l.ctaText}</p>
+        <p className="mt-2 text-sm leading-relaxed text-text-muted">
+          {l.ctaText}
+        </p>
         <div className="mt-4 flex flex-wrap gap-3">
           <a
             href="https://github.com/oscarxdev/CodeWinOptimizer-App/releases/latest"

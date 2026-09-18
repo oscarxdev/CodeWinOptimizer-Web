@@ -31,7 +31,9 @@ export async function generateMetadata({
       type: "article",
       url: absoluteUrl(`/blog/${post.slug}`),
       publishedTime: post.date,
-      images: [{ url: absoluteUrl("/opengraph-image"), width: 1200, height: 630 }],
+      images: [
+        { url: absoluteUrl("/opengraph-image"), width: 1200, height: 630 },
+      ],
     },
   };
 }
@@ -71,7 +73,9 @@ export default async function BlogPostPage({
     <PageShell wide>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleStructuredData) }}
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(articleStructuredData),
+        }}
       />
       <article className="mx-auto max-w-3xl">
         <Prose>
